@@ -17,7 +17,7 @@ mkdir /home
 docker run -p 3306:3306 --name mysql --privileged=true \
 -v /home/mysql/log:/var/log/mysql \
 -v /home/mysql/data:/var/lib/mysql \
--v /home/mysql/conf:/etc/mysql \
+-v /home/mysql/conf:/etc/mysql/conf.d \
 -v /etc/localtime:/etc/localtime:ro \
 -v /home/mysql/mysql-files:/var/lib/mysql-files \
 -e MYSQL_ROOT_PASSWORD=3er4#ER$ \
